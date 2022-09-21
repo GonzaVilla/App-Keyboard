@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00234c;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+input {
+    
+    color: #bcbfce;
+    font-size: 25px;
+    width: 100%;
+    max-width: 480px;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #18ffc6;
+
+}
+input::placeholder {
+    color: #bcbfce;
+    font-size: 25px;
+    opacity: .5;
+}
+
+#keyboardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 684px;
+    gap: 5px;
+    margin: 100px auto;
+}
+.layer {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+.key {
+    background-color: #00234c;
+    color: #bcbfce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #18ffc6;
+}
+.key-normal {
+width: 50px;
+height: 70px;
+}
+.key-mayus {
+    width: 120px;
+    height: 70px;
+    }
+.key-shift {
+    width: 80px;
+    height: 70px;
+}
+.key-space {
+    width: 350px;
+    height: 70px;
+}
+.key:hover {
+    border: 2px solid #bcbfce;
+    
+}
+.key-empty {
+    width: 25px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activated {
+    border: 2px solid #ffbe00;
+
+}
